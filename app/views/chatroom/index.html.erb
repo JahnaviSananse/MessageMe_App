@@ -1,15 +1,13 @@
 <h4 class="ui center aligned medium icon header">
-  <%# <i class="circular users icon"></i> %>
-  <i class="inverted black power icon"></i>
+  <i class="circular orange coffee icon"></i>
   Say Something
 </h4>
 
 <div class="ui two column grid">
-
   <div class="twelve wide column">
     <div class="ui fluid raised card chatbox">
-      <div class="content">
-        <div class="ui  feed">
+      <div class="content" id="messages">
+        <div class="ui feed" id="message-container">
           <%= render @messages %>
         </div>
       </div>
@@ -43,5 +41,4 @@
       </div>
     </div>
   </div>
-
 </div>
